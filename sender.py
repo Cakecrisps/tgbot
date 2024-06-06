@@ -15,7 +15,6 @@ from bd import gettokens, edittokens
 @app.route("/", methods=["POST"])
 async def st():
     js = request.get_json()
-    print(js)
     call = js['body']
     size = js['size']
     scale = js['scale']
